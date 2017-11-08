@@ -7,6 +7,7 @@ body{
  font-family: 'Sintony', sans-serif;
 }
 
+
 /*div{
   border: 1px solid red;
 }*/
@@ -22,7 +23,7 @@ h2{
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5;
-  color: #ffffff;
+  color: #000000;
   opacity: 0.8;
 }
 
@@ -106,10 +107,7 @@ p{
 
 .banner .image{
   width: 60%;
-  margin-right: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 1.5rem;
+  margin: 3rem 2rem 3rem 1.5rem;
 }
 
 .banner .image img{
@@ -119,31 +117,36 @@ p{
 
 .banner .text{
   margin-left: 0;
-  width: 40%;
   height: auto;
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 1rem;
 }
 
 .banner .text h2{
   margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 #start{
   width: 100%;
   text-align: center;
-  font-size: 1.125rem;
-  color: #3B5A9A;
-  padding-left: 8rem;
-  padding-right: 8rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: rgba(255,255,255,1);
+  background-color: #ffffff;
   border: 1px solid #09ACC4;
   border-radius: 0.25rem;
 }
 
+#start p{
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #3B5A9A;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#start p:hover,
 #start:hover{
   background-color: #09ACC4;
   color: #ffffff;
@@ -159,9 +162,9 @@ p{
 
 .main{
   width: 60%;
-  margin-right: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   margin-left: 1.5rem;
 }
 
@@ -184,13 +187,11 @@ p{
 
 .more{
   width: 40%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.orantation,
-.campus,
-.guest{
+.moreinfo{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,15 +206,21 @@ p{
   margin-right: 1rem;
 }
 
+.moreinfo.top .image{
+  margin-top: 0;
+}
+
 .more .image img{
   width: 100%;
   height: auto;
 }
 
-.more .text{
+
+.moreinfo .text{
   width: 65%;
   margin-top: auto;
   margin-bottom: auto;
+  padding-right: 1rem;
 }
 
 .main p,
@@ -222,19 +229,18 @@ p{
   margin-bottom: 0.5rem;
 }
 
-.orantation span,
-.campus span,
-.guest span{
+.moreinfo span{
   color: #09ACC4;
 }
 
-.info h2{
-  color: #000000;
+.moreinfo span:hover{
+  color: #3B5A9A;
 }
 
-.campus{
+.moreinfo.second{
   background-color: #f0f0f0;
 }
+
 
 /*start learning*/
 .majors{
@@ -254,7 +260,7 @@ p{
   display: flex;
   width: auto;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .majors h1{
@@ -266,8 +272,8 @@ p{
 .major{
   display: inline-block;
   background-color: #ffffff;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   width: 30%;
 }
 
@@ -285,22 +291,19 @@ p{
   padding: 1rem 1rem 1.5rem 1rem;
 }
 
-.major h2{
-  color: #000000;
-}
-
 .major #courses{
   color: #A3ACB5;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
+
 /*Thesis exhibit*/
 #thesis{
   color: #3B5A9A;
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .main video{
@@ -351,9 +354,56 @@ p{
 
 
 @media only screen and (max-width:1024px) and (orientation:portrait){
+  .banner{
+    display: block;
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .banner .image{
+    width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .banner .text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .banner .text h2{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #start{
+    width: 100%;
+  }
+
+  .info{
+    display: block;
+    width: 100%;
+  }
+
+  .main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .more{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
 
 }
 
-@media only screen and (max-width:470px){
+@media only screen and (max-width:470px) and (orientation: portrait){
 
 }
