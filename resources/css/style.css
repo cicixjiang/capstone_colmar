@@ -91,6 +91,10 @@ p{
   color: #A3ACB5;
 }
 
+.mobile-nav{
+  display: none;
+}
+
 .body{
   position: relative;
   top: 4rem;
@@ -107,7 +111,7 @@ p{
 
 .banner .image{
   width: 60%;
-  margin: 3rem 2rem 3rem 1.5rem;
+  margin: 3rem 1rem 3rem 1.5rem;
 }
 
 .banner .image img{
@@ -116,11 +120,8 @@ p{
 }
 
 .banner .text{
-  margin-left: 0;
-  height: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 1rem;
+  width: 40%;
+  margin: auto 1rem auto 0;
 }
 
 .banner .text h2{
@@ -132,13 +133,13 @@ p{
 
 #start{
   width: 100%;
-  text-align: center;
   background-color: #ffffff;
   border: 1px solid #09ACC4;
   border-radius: 0.25rem;
 }
 
 #start p{
+  text-align: center;
   font-size: 1.125rem;
   font-weight: bold;
   color: #3B5A9A;
@@ -162,10 +163,7 @@ p{
 
 .main{
   width: 60%;
-  margin-right: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-left: 1.5rem;
+  margin: 3rem 1rem 3rem 1.5rem;
 }
 
 .info .main img{
@@ -175,7 +173,7 @@ p{
 
 .main h1{
   color: #3B5A9A;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -200,10 +198,7 @@ p{
 .more .image{
   width: 35%;
   height: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 1rem;
 }
 
 .moreinfo.top .image{
@@ -239,6 +234,10 @@ p{
 
 .moreinfo.second{
   background-color: #f0f0f0;
+}
+
+.mobile{
+  display: none;
 }
 
 
@@ -297,6 +296,15 @@ p{
   margin-bottom: 0.5rem;
 }
 
+.tablet{
+  display: none;
+}
+
+.mobile{
+  display: none;
+}
+
+
 
 /*Thesis exhibit*/
 #thesis{
@@ -311,15 +319,8 @@ p{
   height: auto;
 }
 
-.fisma,
-.nowandthen{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nowandthen{
-  background-color: #f0f0f0;
+#videotitle{
+  margin-top: 1rem;
 }
 
 /*footer*/
@@ -354,6 +355,7 @@ p{
 
 
 @media only screen and (max-width:1024px) and (orientation:portrait){
+
   .banner{
     display: block;
     height: auto;
@@ -399,11 +401,115 @@ p{
     margin-right: auto;
   }
 
+  .row.desktop{
+    display: none;
+  }
+
+  .tablet{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 
 
+  .row {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .major{
+    width: 50%;
+  }
 
 }
 
-@media only screen and (max-width:470px) and (orientation: portrait){
+@media only screen and (max-width:750px){
+
+  .desktop-nav{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+      justify-content: space-around;
+  }
+
+  .mobile-nav img{
+    margin-top: 0.5rem;
+    height: 2.75rem;
+    width: auto;
+  }
+
+  .desktop-image{
+    display: block;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+
+  #computericon{
+    height: 2.5rem;
+  }
+
+}
+
+
+
+@media only screen and (max-width:550px) and (orientation: portrait){
+
+  .moreinfo{
+    display: block;
+  }
+
+  .more .image{
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .moreinfo.top .image{
+    margin-top: 1;
+  }
+
+  .moreinfo .text{
+    width: 90%;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .tablet{
+    display: none;
+  }
+
+  .desktop-image{
+    display: none;
+  }
+
+  .image .mobile{
+    display: inline-block;
+  }
+
+  .majors{
+    padding-bottom: 3rem;
+  }
+
+  .row.mobile{
+    display: block;
+    background-color: #ffffff;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .terms{
+    display: none;
+  }
+
 
 }
